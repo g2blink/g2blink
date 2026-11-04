@@ -1,0 +1,5 @@
+{"id": "percent", "prompt": "What is 17.5% of 2480?", "expect_regex": "434", "expect_tools": ["calculator"]}
+{"id": "parens", "prompt": "Compute (12+8)*3-4.", "expect_regex": "\\b56\\b", "expect_tools": ["calculator"]}
+{"id": "position", "prompt": "I have a $5,000 account, want to risk 1%, with a 25 pip stop loss and $10 per pip per lot. What lot size?", "expect_regex": "0\\.2\\b", "expect_tools": ["position_size"]}
+{"id": "div_zero", "prompt": "What is 10 divided by 0?", "expect_regex": "undefined|cannot|can't|zero", "expect_tools": ["calculator"]}
+{"id": "no_tool", "prompt": "Say hello in one word.", "expect_regex": "hello|hi", "expect_tools": []}
